@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter and Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* Use Prompt for Thai text, Inter for English, and sans-serif as fallback */
+            font-family: 'Prompt', 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        /* Custom scroll-spy like active link for navigation (optional, can be done with JS) */
+        .nav-link.active {
+            color: #4F46E5; /* Indigo 600 */
+            font-weight: 600;
+        }
+        /* Custom gradient for buttons */
+        .btn-gradient {
+            background-image: linear-gradient(to right, #6366F1, #8B5CF6); /* Indigo 500 to Violet 500 */
+        }
+        .btn-gradient:hover {
+            background-image: linear-gradient(to right, #4F46E5, #7C3AED); /* Darker shades on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo/Name -->
+            <a href="index.html" class="text-2xl font-bold text-gray-900 rounded-lg p-2 hover:bg-gray-100 transition-colors">Weerapath Choonhoo</a>
+            <!-- Navigation Links -->
+            <ul class="flex space-x-6">
+                <li><a href="Website.html" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors p-2 rounded-lg active">Home</a></li>
+                <li><a href="about.html" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors p-2 rounded-lg">About</a></li>
+                <li><a href="portfolio.html" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors p-2 rounded-lg">Portfolio</a></li>
+                <li><a href="portfolio.html#contact" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors p-2 rounded-lg">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('http://googleusercontent.com/file_content/3');">
+            <div class="absolute inset-0 bg-black opacity-60 rounded-md"></div>
+            <div class="relative z-10 text-white p-6 md:p-10 bg-white bg-opacity-15 rounded-xl shadow-2xl mx-4 max-w-2xl transform hover:scale-105 transition-all duration-500 ease-in-out">
+                <!-- Profile Image added here with object-position adjustment -->
+                <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t1.15752-9/520421785_1791737521718558_8679598008728871978_n.jpg?stp=dst-jpg_p2048x2048_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=LXK3b2p6l4sQ7kNvwGjNgsY&_nc_oc=Admzo6EKbU-dkFucoG_OkhKDgDssPIg5sE5Sg908R-crAYjsc5iJZJSzuIKzvA7VisA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fbkk5-7.fna&oh=03_Q7cD2wFzDrYo5iwyg21VyMKjvN8P0jK4LsbNsAzNquoeRRKLfQ&oe=68A433DE" alt="Profile Picture" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg mx-auto mb-6 border-4 border-white object-[50%_30%]">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">สวัสดีครับ <span class="text-indigo-300">ผมวีรภัทร์นะครับ</span></h1>
+                <p class="text-lg md:text-xl font-light mb-8">ผมเชื่อว่าความพยายาม จะไม่ทรยศใคร</p>
+                <a href="portfolio.html" class="inline-block btn-gradient text-white font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">View My Work</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Weerapath Choonhoo. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
